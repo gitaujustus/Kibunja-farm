@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import TopContactBar from "./components/TopContactBar";
+import MainNavBar from "./components/MainNavBar";
+import Footer from "./components/Footer";
+
+// Reminder: Run 'pnpm add react-icons' if not already installed for icon support in TopContactBar
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +27,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <TopContactBar />
+          <MainNavBar />
+          <main className="flex-1 flex flex-col">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
