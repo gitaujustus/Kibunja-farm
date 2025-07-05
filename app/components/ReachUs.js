@@ -1,8 +1,16 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function ReachUs() {
   return (
-    <section className="py-12 px-[20px] bg-[#F0FDF4] " id="reach-us">
+    <motion.section
+      className="py-12 px-[20px] bg-[#F0FDF4] "
+      id="reach-us"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.7, delay: 0.1 }}
+    >
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-[#111]">Reach Us</h2>
       <div className="flex flex-col md:flex-row gap-8 items-start md:items-stretch sm:max-w-[80%] mx-auto">
         {/* Left: Info */}
@@ -39,6 +47,6 @@ export default function ReachUs() {
           ></iframe>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 } 

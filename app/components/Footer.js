@@ -9,8 +9,8 @@ export default function Footer() {
        <div className=" w-full md:flex-1/2 flex justify-between md:justify-around  flex-wrap gap-8">
          {/* Quick Links */}
          <div className="md:w-1/4 mb-8 md:mb-0">
-          <div className="font-semibold mb-2 text-yellow-500">Quick Links</div>
-          <ul className="">
+          <div className="font-semibold mb-2 text-yellow-500  ">Quick Links</div>
+          <ul className="text-[14px] grid grid-cols-2">
             <li><a href="/" className="hover:underline">Home</a></li>
             <li><a href="/gallery" className="hover:underline">Gallery</a></li>
             <li><a href="/products" className="hover:underline">Poultry</a></li>

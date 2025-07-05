@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -77,13 +78,18 @@ export default function HeroSection() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/90 via-[#181818]/60 to-transparent mt-10" />
           {/* <div className="absolute inset-0 bg-gradient-to-t from-[#00743F]/80 via-[#00743F]/60 to-transparent mt-10" /> */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mt-60 sm:mt-70">
+          <motion.div
+            className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mt-60 sm:mt-70"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <h1 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg animate-fade-in-up">{slide.heading}</h1>
             <p className="text-lg sm:text-2xl mb-6 font-medium drop-shadow animate-fade-in-up delay-100">{slide.subheading}</p>
             <a href="#reach-us" className="bg-[#17406D] hover:bg-[#005c32] transition-colors px-8 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2 animate-fade-in-up delay-200">
               {slide.cta}
             </a>
-          </div>
+          </motion.div>
         </div>
       ))}
     </section>

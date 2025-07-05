@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function EmpowermentBanner() {
   return (
     <section className="relative w-full sm:py-10  flex items-center justify-center overflow-hidden bg-[#F0FDF4">

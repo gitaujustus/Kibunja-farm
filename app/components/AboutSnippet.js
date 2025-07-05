@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function AboutSnippet() {
   return (
-    <section className="flex justify-center py-30 px-4 bg-[#FCFCFC]">
+    <motion.section
+      className="flex justify-center py-30 px-4 bg-[#FCFCFC]"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.7, delay: 0.1 }}
+    >
       <div className="flex flex-col sm:flex-row max-w-5xl w-full items-start">
         {/* Vertical label with bar, both rotated and aligned horizontally */}
         <div className="hidden sm:flex flex-row items-center justify-center mr-8 min-w-[48px]" style={{ height: '120px' }}>
@@ -18,6 +26,6 @@ export default function AboutSnippet() {
           <a href="#about" className="text-[#2196F3] text-base font-medium underline hover:text-[#0A2940] text-left block mt-1">[ Learn More ]</a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 } 

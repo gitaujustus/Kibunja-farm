@@ -1,4 +1,5 @@
 import { FaTruck, FaCut, FaLightbulb } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -22,16 +23,35 @@ export default function ServicesSection() {
   return (
     <section className="py-16 px-4 bg-[#F0FDF4]">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-[#00743F]">Our Services</h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {services.map((s, i) => (
-          <div key={i} className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
-            {s.img && <img src={s.img} alt={s.title} className="w-24 h-24 mb-3 object-contain" />}
-            {s.icon && <FaCut className="text-4xl text-[#FAB732] mb-3" />}
-            <div className="font-bold text-lg mb-2 text-[#104269]">{s.title}</div>
-            <div className="text-gray-600 text-sm">{s.desc}</div>
-          </div>
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.15
+            }
+          }
+        }}
+      >
+        {services.map((service, i) => (
+          <motion.div
+            key={service.title}
+            className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center border border-gray-100"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: i * 0.15 }}
+          >
+            {service.img && <img src={service.img} alt={service.title} className="w-24 h-24 mb-3 object-contain" />}
+            {service.icon && <FaCut className="text-4xl text-[#FAB732] mb-3" />}
+            <div className="font-bold text-lg mb-2 text-[#104269]">{service.title}</div>
+            <div className="text-gray-600 text-sm">{service.desc}</div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 } 
