@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#082338] text-white pt-10 pb-4 px-4 ">
@@ -11,12 +13,12 @@ export default function Footer() {
          <div className="md:w-1/4 mb-8 md:mb-0">
           <div className="font-semibold mb-2 text-yellow-500  ">Quick Links</div>
           <ul className="text-[14px] grid grid-cols-2">
-            <li><a href="/" className="hover:underline">Home</a></li>
-            <li><a href="/gallery" className="hover:underline">Gallery</a></li>
-            <li><a href="/products" className="hover:underline">Poultry</a></li>
-            <li><a href="/tips" className="hover:underline">Tips</a></li>
-            <li><a href="/about" className="hover:underline">About Us</a></li>
-            <li><a href="/contact" className="hover:underline">Contact</a></li>
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/gallery" className="hover:underline">Gallery</Link></li>
+            <li><Link href="/products" className="hover:underline">Poultry</Link></li>
+            <li><Link href="/tips" className="hover:underline">Tips</Link></li>
+            <li><Link href="/about" className="hover:underline">About Us</Link></li>
+            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
           </ul>
         </div>
         {/* Reach Us */}

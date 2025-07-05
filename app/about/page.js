@@ -29,13 +29,13 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-bold text-[#00743F] mb-2">Our Mission</h2>
             <p className="text-gray-700 text-base">
-              To empower poultry farmers in Murang'a and beyond by providing healthy, high-quality chicks, hens, cocks, ducks, turkeys, geese, and guinea fowls, along with expert advice and reliable delivery.
+              To empower poultry farmers in Murang&apos;a and beyond by providing healthy, high-quality chicks, hens, cocks, ducks, turkeys, geese, and guinea fowls, along with expert advice and reliable delivery.
             </p>
           </div>
           <div>
             <h2 className="text-2xl font-bold text-[#00743F] mb-2">Our Vision</h2>
             <p className="text-gray-700 text-base">
-              To be Kenya's most trusted poultry supplier, known for innovation, customer care, and helping farmers thrive.
+              To be Kenya&apos;s most trusted poultry supplier, known for innovation, customer care, and helping farmers thrive.
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function AboutPage() {
       <section className="max-w-5xl mx-auto mb-12 px-4">
         <h2 className="text-2xl font-bold text-[#00743F] mb-4">Our Story</h2>
         <p className="text-gray-700 text-base mb-4">
-          Founded in Kenol Town, Murang'a, Kibunja Farm began with a simple goal: to make quality poultry accessible to every farmer. Over the years, we've grown from a small local supplier to a trusted brand serving customers across Kenya. Our commitment to quality, transparency, and farmer success remains at the heart of everything we do.
+          Founded in Kenol Town, Murang&apos;a, Kibunja Farm began with a simple goal: to make quality poultry accessible to every farmer. Over the years, we&apos;ve grown from a small local supplier to a trusted brand serving customers across Kenya. Our commitment to quality, transparency, and farmer success remains at the heart of everything we do.
         </p>
         <img
           src="https://plus.unsplash.com/premium_photo-1681844053886-2286f8efe9b5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

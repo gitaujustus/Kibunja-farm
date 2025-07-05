@@ -8,7 +8,7 @@ export default function ContactPage() {
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#00743F] drop-shadow mb-2">Contact Us</h1>
           <p className="text-lg sm:text-xl text-[#104269] font-medium max-w-2xl mx-auto drop-shadow">
-            We'd love to hear from you! Reach out for orders, questions, or expert poultry advice.
+            We&apos;d love to hear from you! Reach out for orders, questions, or expert poultry advice.
           </p>
         </div>
       </section>
@@ -19,7 +19,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold text-[#00743F] mb-4">Get in Touch</h2>
           <div className="mb-4">
             <div className="font-semibold text-[#104269] mb-1">Location:</div>
-            <div className="text-gray-700">Kenol Town, Murang'a, Kenya</div>
+            <div className="text-gray-700">Kenol Town, Murang&apos;a, Kenya</div>
           </div>
           <div className="mb-4">
             <div className="font-semibold text-[#104269] mb-1">Email:</div>

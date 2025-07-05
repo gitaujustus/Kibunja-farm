@@ -18,7 +18,7 @@ export default function ReachUs() {
           <div>
             <div className="font-bold text-[#082338]  text-xl mb-2 flex items-center gap-2"><FaMapMarkerAlt className="inline-block text-[#00743F]" /> Our Locations</div>
             <div className="ml-6 text-gray-700 leading-tight text-[14px] md:text-[16px]">
-              Kenol Town,<br />Murang'a,<br />Kenya
+              Kenol Town,<br />Murang&apos;a,<br />Kenya
             </div>
           </div>
           <div>
