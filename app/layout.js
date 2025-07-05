@@ -3,6 +3,7 @@ import "./globals.css";
 import TopContactBar from "./components/TopContactBar";
 import MainNavBar from "./components/MainNavBar";
 import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
 
 // Reminder: Run 'pnpm add react-icons' if not already installed for icon support in TopContactBar
 
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col min-h-screen">
+          <Chatbot/>
           <TopContactBar />
           <MainNavBar />
           <main className="flex-1 flex flex-col">{children}</main>
