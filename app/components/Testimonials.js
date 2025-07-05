@@ -3,13 +3,13 @@ const testimonials = [
       name: "Peter Kaluma",
       location: "Murang'a",
       review:
-        "I've ordered chicks from Justus Chicks three times now, and each batch arrived healthy, active, and on time. Their customer service is top-notch. I also appreciate the follow-up messages and tips on how to care for the chicks — they really care about farmers' success.",
+        "I've ordered chicks from Kibunja Farm three times now, and each batch arrived healthy, active, and on time. Their customer service is top-notch. I also appreciate the follow-up messages and tips on how to care for the chicks — they really care about farmers' success.",
     },
     {
       name: "Grace Wanjiku",
       location: "Kenol",
       review:
-        "The hens I bought are laying well and adapted quickly to my backyard setup. The team was patient with my questions and even guided me on feeding schedules. I highly recommend Justus Chicks for anyone starting out or scaling their poultry farm.",
+        "The hens I bought are laying well and adapted quickly to my backyard setup. The team was patient with my questions and even guided me on feeding schedules. I highly recommend Kibunja Farm for anyone starting out or scaling their poultry farm.",
     },
     {
       name: "Samuel Mwangi",

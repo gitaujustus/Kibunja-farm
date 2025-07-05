@@ -89,6 +89,14 @@ const images = [
     src: "https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=743&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Fresh eggs in a basket",
   },
+  {
+    src: "https://images.unsplash.com/photo-1725781188703-32f11fd53fe4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Guinea fowl eggs",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1639194335563-d56b83f0060c?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "kienyeji eggs",
+  },
 ];
 
 export default function GalleryPage() {
