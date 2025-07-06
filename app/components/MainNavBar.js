@@ -34,7 +34,7 @@ export default function MainNavBar() {
                 className={
                   (pathname === link.href
                     ? "text-yellow-400 font-semibold "
-                    : "hover:underline underline-offset-4")
+                    : "hover:text-yellow-200")
                 }
               >
                 {link.name}

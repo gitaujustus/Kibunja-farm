@@ -45,7 +45,7 @@ export default function Testimonials() {
             key={i}
             className="relative bg-white border border-gray-300 rounded-xl pt-8 pb-4 px-4 flex flex-col items-center text-center min-h-[260px]"
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: i * 0.15 }}
           >
             {/* Initial badge */}

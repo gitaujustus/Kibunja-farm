@@ -8,16 +8,16 @@ export default function AboutPage() {
   <img
     src="https://images.unsplash.com/photo-1706458188457-eef5713b72e9?q=80&w=859&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     alt="Kibunja Farm Hero"
-    className="absolute inset-0 w-full h-full object-cover object-bottom blur-sm z-0"
+    className="absolute inset-0 w-full h-full object-cover object-bottom blur-xs z-0"
   />
   {/* dark overlay */}
-  <div className="absolute inset-0 bg-black/60 z-10" />
+  <div className="absolute inset-0 bg-black/70 z-10" />
   {/* Text content */}
   <div className="relative z-20 text-center px-4">
     <h1 className="text-4xl sm:text-5xl font-extrabold text-[#09ff90] drop-shadow mb-4">
       About Us
     </h1>
-    <p className="text-lg sm:text-2xl text-[#27a0fd] font-medium max-w-2xl mx-auto drop-shadow">
+    <p className="text-lg sm:text-2xl text-[#40acff] font-medium max-w-2xl mx-auto drop-shadow">
       Empowering farmers across Kenya with quality poultry, expert guidance, and reliable service.
     </p>
   </div>

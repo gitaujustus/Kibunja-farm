@@ -14,7 +14,7 @@ const products = [
       discount: 19,
     },
     {
-      name: "One-Month-Old Pullets",
+      name: "2 weeks old chicks",
       price: 150,
       oldPrice: 180,
       badge: "KSh. 150",
@@ -29,7 +29,7 @@ const products = [
       price: 800,
       oldPrice: 950,
       badge: "KSh. 800",
-      img: "https://plus.unsplash.com/premium_photo-1664527009188-a8f5e05589fb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "/chicken.jpg",
       desc: "Productive hens for your poultry business.",
       types: "Kienyeji, Improved Local",
       freeDelivery: true,
@@ -37,7 +37,7 @@ const products = [
     },
     {
       name: "Kienyeji Cocks",
-      price: 900,
+      price: 999,
       oldPrice: 1100,
       badge: "KSh. 900",
       img: "https://images.unsplash.com/photo-1578051696754-4652a8f67882?q=80&w=326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -47,11 +47,11 @@ const products = [
       discount: 18,
     },
     {
-      name: "Muscovy Ducks",
+      name: "Muscovy Ducks (Kiengei)",
       price: 700,
       oldPrice: 850,
       badge: "KSh. 700",
-      img: "https://images.unsplash.com/photo-1534627760265-69713192ade4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://media.istockphoto.com/id/1479902954/photo/muscovy-duck.jpg?s=1024x1024&w=is&k=20&c=AeJyrtVM20aV2_ZN-Mrtq0s3h2WpDMNfEQJT7xl4fco=",
       desc: "Hardy ducks for meat and eggs.",
       types: "Muscovy",
       freeDelivery: true,
@@ -59,8 +59,8 @@ const products = [
     },
     {
       name: "Guinea Fowls",
-      price: 600,
-      oldPrice: 750,
+      price: 2000,
+      oldPrice: 2500,
       badge: "KSh. 600",
       img: "https://images.unsplash.com/photo-1583147474478-f8920da507ca?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       desc: "Exotic guinea fowls for your farm.",
@@ -78,39 +78,20 @@ export default function ProductOverview() {
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 text-[#00743F]">Our Poultry Products</h2>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
-        // initial="hidden"
-        // whileInView="visible"
-        // viewport={{ once: false }}
-        // variants={{
-        //   hidden: {},
-        //   visible: {
-        //     transition: {
-        //       staggerChildren: 0.15
-        //     }
-        //   }
-        // }}
-        // initial={{ opacity: 0, y: 40 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // viewport={{ once: false }}
-        // transition={{ 
-        //   duration: 0.7, 
-        //   delayChildren: 0.2, 
-        //   staggerChildren: 0.15
-        // }}
       >
         {products.map((product, index) => (
           <motion.div
             key={product.name}
             className="relative bg-white rounded-[16px] shadow-sm overflow-visible flex flex-col w-full mx-auto border border-gray-100"
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index* 0.2 }}
             viewport={{ once: false }}
           >
             {/* Price badge - positioned at top-right corner like in reference */}
             <div className="absolute -top-6 -right-3 z-10">
               <div className="bg-white border-2 border-green-600 text-red-500 rounded-full w-14 h-14 flex items-center justify-center text-xs font-bold shadow-md">
-                -{product.discount}%
+              -{Math.round(((product.oldPrice - product.price) / product.oldPrice) * 100)}%
               </div>
             </div>
             
@@ -140,7 +121,7 @@ export default function ProductOverview() {
                     <span className="text-xs text-gray-400 line-through">KSh. {product.oldPrice}</span>
                     {/* <span className="text-xs text-red-500">(-{product.discount}%)</span> */}
                   </div>
-                  <div className="text-xs text-gray-500">Free delivery for 50+ items</div>
+                  <div className="text-xs text-gray-500">Free delivery for more birds</div>
                 </div>
               </div>
               

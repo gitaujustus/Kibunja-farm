@@ -12,7 +12,7 @@ export default function Footer() {
          {/* Quick Links */}
          <div className="md:w-1/4 mb-8 md:mb-0">
           <div className="font-semibold mb-2 text-yellow-500  ">Quick Links</div>
-          <ul className="text-[14px] grid grid-cols-2">
+          <ul className="text-[14px] grid grid-cols-2 gap-2 md:gap-0">
             <li><Link href="/" className="hover:underline">Home</Link></li>
             <li><Link href="/gallery" className="hover:underline">Gallery</Link></li>
             <li><Link href="/products" className="hover:underline">Poultry</Link></li>
@@ -31,6 +31,7 @@ export default function Footer() {
        </div>
       </div>
       <div className="text-center text-xs text-white/70 mt-8">© 2025 Kibunja Farm. All rights reserved.</div>
+      <div className="text-center text-xs text-white/70 mt-2">Designed/Developed by <a href="https://gitaujustus.vercel.app" target="_blank" className="text-yellow-500 underline">J&apos;ASTUTE</a></div>
     </footer>
   );
 } 

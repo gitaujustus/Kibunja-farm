@@ -29,6 +29,10 @@ const images = [
     alt: "Female improved kienyeji hen",
   },
   {
+    src: "https://plus.unsplash.com/premium_photo-1661964158054-f8ec74178017?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "kienyeji chickens",
+  },
+  {
     src: "https://images.unsplash.com/photo-1578051696754-4652a8f67882?q=80&w=326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "White hen with red comb 2",
   },

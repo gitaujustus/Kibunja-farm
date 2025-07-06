@@ -81,7 +81,7 @@ export default function HeroSection() {
           <motion.div
             className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mt-60 sm:mt-70"
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg animate-fade-in-up">{slide.heading}</h1>

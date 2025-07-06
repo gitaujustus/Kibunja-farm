@@ -42,7 +42,7 @@ export default function ServicesSection() {
             key={service.title}
             className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center border border-gray-100"
             initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: i * 0.15 }}
           >
             {service.img && <img src={service.img} alt={service.title} className="w-24 h-24 mb-3 object-contain" />}
