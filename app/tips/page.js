@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const blogs = [
@@ -104,7 +105,7 @@ export default function TipsPage() {
       <div className="space-y-10">
         {blogs.map((blog, i) => (
           <article key={i} className="block bg-white rounded-2xl shadow-md overflow-hidden">
-            <img src={blog.image} alt={blog.title} className="w-full h-56 object-cover" loading="lazy" />
+            <Image width={1920} height={1080} src={blog.image} alt={blog.title} className="w-full h-56 object-cover" loading="lazy" />
             <div className="p-6">
               <h2 className="text-2xl font-bold text-[#104269] mb-2">{blog.title}</h2>
               <div className="text-sm text-gray-500 mb-2">By {blog.author} • {new Date(blog.date).toLocaleDateString()}</div>

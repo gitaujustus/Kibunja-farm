@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import productsData from "@/lib/products.json";
+import Image from "next/image";
 
 export default function ProductsPage() {
   const [selectedMain, setSelectedMain] = useState(0); // 0 = All, 1 = Chicken, last = Eggs
@@ -92,7 +93,12 @@ export default function ProductsPage() {
                     viewport={{ once: false }}
                     className="bg-white rounded-2xl shadow-md p-2 md:p-4 flex flex-col items-center text-center border border-gray-100"
                   >
-                    <img src={p.img} alt={p.name} className="w-full h-40 object-cover rounded-xl mb-4" />
+                    <Image 
+                    src={p.img} alt={p.name}
+                    width={p.width}
+                    height={p.height}
+                    loading="lazy" 
+                    className="w-full h-40 object-cover rounded-xl mb-4" />
                     <div className="font-bold text-lg mb-1 text-[#00743F]">{p.name}</div>
                     <div className="text-[#E53935] font-semibold text-base mb-1">KSh. {p.price}</div>
                     <div className="text-xs mb-2">

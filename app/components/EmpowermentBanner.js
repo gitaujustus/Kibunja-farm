@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function EmpowermentBanner() {
   return (
     <section className="relative w-full sm:py-10  flex items-center justify-center overflow-hidden bg-[#F0FDF4">
-      <img
+      <Image
         src="/chicks21.png"
         alt="Chicks background"
+        width={1980}
+        height={1000}
         className="absolute inset-0 w-full h-full object-cover object-center z-0"
         loading="lazy"
       />

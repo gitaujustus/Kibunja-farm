@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import TopContactBar from "./components/TopContactBar";
 import MainNavBar from "./components/MainNavBar";
@@ -18,6 +18,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
+
 export const metadata = {
   title: "Kibunja Farm | Quality Day-Old Chicks, Poultry & Eggs in Kenya",
   description:
@@ -26,11 +32,11 @@ export const metadata = {
     title: "Kibunja Farm | Quality Day-Old Chicks, Poultry & Eggs in Kenya",
     description:
       "Kibunja Farm supplies healthy day-old chicks, kienyeji chicken, ducks, guinea fowls, and fresh eggs across Kenya. Free delivery, expert guidance, and quality you can trust.",
-    url: "https://kibunjafarm.co.ke/",
+    url: "https://kibunja-farm.vercel.app/",
     siteName: "Kibunja Farm",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1613684574327-dc32b58b2fca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+        url: "/gallery/group-of-newborn-chicks.webp",
         width: 1200,
         height: 630,
         alt: "Kibunja Farm - Day-old chicks and poultry in Kenya",
@@ -45,7 +51,7 @@ export const metadata = {
     description:
       "Kibunja Farm supplies healthy day-old chicks, kienyeji chicken, ducks, guinea fowls, and fresh eggs across Kenya. Free delivery, expert guidance, and quality you can trust.",
     images: [
-      "https://images.unsplash.com/photo-1613684574327-dc32b58b2fca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0"
+      "/gallery/group-of-newborn-chicks.webp"
     ],
     site: "@kibunjafarm",
   },
@@ -55,7 +61,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
       >
         <div className="flex flex-col min-h-screen">
           <Chatbot/>

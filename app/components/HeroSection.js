@@ -1,46 +1,61 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const slides = [
   {
     img: "/gallery/closeup-of-a-fluffy-chick-in-a-brooder.webp",
+    width: 870,
+    height: 580,
     heading: "Start Strong with Quality Chicks",
     subheading: "Trusted breeds. Reliable supply. Perfect for your poultry hustle.",
     cta: "Order Chicks",
   },
   {
     img: "/gallery/group-of-newborn-chicks.webp",
+    width: 870,
+    height: 580,
     heading: "Start Strong with Quality Chicks",
     subheading: "From as little as ksh 89 per chick.",
     cta: "Order Chicks",
   },
   {
     img: "/gallery/luen-duck-2.webp",
+    width: 870,
+    height: 580,
     heading: "Ducks & Geese for Every Farm",
     subheading: "Hardy, healthy waterfowl for meat and eggs.",
     cta: "Order Ducks & Geese",
   },
   {
     img: "/gallery/duck-chicks.webp",
+    width: 870,
+    height: 580,
     heading: "Duck Chicks – Strong Start, Great Growth",
     subheading: "Healthy ducklings for meat or eggs.",
     cta: "Order Ducklings Now",
   },
   {
     img: "/gallery/exotic-guinea-fowl.webp",
+    width: 1032,
+    height: 580,
     heading: "Guinea Fowls: Exotic & Hardy",
     subheading: "Pearl, White, and Lavender breeds available.",
     cta: "Order Guinea Fowls",
   },
   {
     img: "/gallery/beautiful-male-turkey-in-a-field.webp",
+    width: 870,
+    height: 580,
     heading: "Turkeys: Big, Bold, and Beautiful",
     subheading: "Raise your own flock with our healthy turkeys.",
     cta: "Order Turkeys",
   },
   {
     img: "/gallery/white-hen-with-red-comb.webp",
+    width: 600,
+    height: 399,
     heading: "Mature Hens for Your Farm",
     subheading: "Productive, healthy hens for eggs and meat.",
     cta: "Order Hens",
@@ -64,11 +79,13 @@ export default function HeroSection() {
           key={idx}
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
         >
-          <img
+          <Image
             src={slide.img}
             alt={slide.heading}
+            height={slide.height}
+            width={slide.height}
             className="w-full h-full object-cover object-center"
-            loading="lazy"
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/90 via-[#181818]/60 to-transparent mt-10" />
           {/* <div className="absolute inset-0 bg-gradient-to-t from-[#00743F]/80 via-[#00743F]/60 to-transparent mt-10" /> */}

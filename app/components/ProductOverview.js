@@ -1,5 +1,6 @@
 import { FaRegCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const products = [
   {
@@ -8,10 +9,11 @@ const products = [
     oldPrice: 110,
     badge: "KSh. 90",
     img: "/gallery/closeup-of-a-fluffy-chick-in-a-brooder.webp",
+    width: 870,
+    height: 580,
     desc: "Fully vaccinated, and mature in under 4 months, giving you a healthy, productive flock with fewer losses.",
     types: "Kienyeji improved F1 (Sasso, Kroiler, Kenbow)",
     freeDelivery: true,
-    discount: 19,
   },
   {
     name: "2 weeks old chicks",
@@ -19,10 +21,11 @@ const products = [
     oldPrice: 180,
     badge: "KSh. 150",
     img: "/gallery/group-of-newborn-chicks.webp",
+    width: 870,
+    height: 580,
     desc: "Strong pullets for a head start in egg production.",
     types: "Kienyeji, Sasso, Kuroiler",
     freeDelivery: true,
-    discount: 17,
   },
   {
     name: "Kienyeji Hens",
@@ -30,10 +33,11 @@ const products = [
     oldPrice: 950,
     badge: "KSh. 800",
     img: "/gallery/female-improved-kienyeji-hen.webp",
+    width: 870,
+    height: 580,
     desc: "Productive hens for your poultry business.",
     types: "Kienyeji, Improved Local",
     freeDelivery: true,
-    discount: 16,
   },
   {
     name: "Kienyeji Cocks",
@@ -41,10 +45,11 @@ const products = [
     oldPrice: 1100,
     badge: "KSh. 900",
     img: "/gallery/white-hen-with-red-comb-2.webp",
+    width: 326,
+    height: 580,
     desc: "Vigorous cocks for breeding and meat.",
     types: "Kuroiler, Improved Local",
     freeDelivery: true,
-    discount: 18,
   },
   {
     name: "Muscovy Ducks (Kiengei)",
@@ -52,10 +57,11 @@ const products = [
     oldPrice: 850,
     badge: "KSh. 700",
     img: "/gallery/muscovy-duck-kiengei.webp",
+    width: 1024,
+    height: 681,
     desc: "Hardy ducks for meat and eggs.",
     types: "Muscovy",
     freeDelivery: true,
-    discount: 18,
   },
   {
     name: "Guinea Fowls",
@@ -63,10 +69,11 @@ const products = [
     oldPrice: 2500,
     badge: "KSh. 600",
     img: "/gallery/guinea-fow-lying-on-the-ground.webp",
+    width: 869,
+    height: 580,
     desc: "Exotic guinea fowls for your farm.",
     types: "Pearl, White, Lavender",
     freeDelivery: true,
-    discount: 20,
   },
 ];
 
@@ -97,10 +104,11 @@ export default function ProductOverview() {
             
             {/* Product image - with overflow hidden for clean corners */}
             <div className="relative h-[200px] overflow-hidden rounded-t-[16px]">
-              <img 
+              <Image 
                 src={product.img} 
-                // src={galleryImages[index % galleryImages.length]} 
                 alt={product.name} 
+                height={product.height}
+                width={product.width}
                 className="w-full h-full object-cover" 
                 loading="lazy" 
               />
@@ -119,7 +127,6 @@ export default function ProductOverview() {
                   <div className="flex items-center gap-1.5">
                     <span className="text-red-500 font-bold text-lg">KSh. {product.price}</span>
                     <span className="text-xs text-gray-400 line-through">KSh. {product.oldPrice}</span>
-                    {/* <span className="text-xs text-red-500">(-{product.discount}%)</span> */}
                   </div>
                   <div className="text-xs text-gray-500">Free delivery for more birds</div>
                 </div>

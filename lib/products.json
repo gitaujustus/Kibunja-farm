@@ -6,6 +6,8 @@
           {
             "name": "Day-Old Chick (F1 Improved Kienyeji)",
             "img": "/gallery/closeup-of-a-fluffy-chick-in-a-brooder.webp",
+            "width": 870,
+            "height": 580,
             "price": 89,
             "stock": "In Stock",
             "desc": "Healthy, vaccinated day-old chicks. Types: Sasso, Kuroiler, Kenbro, Rainbow Rooster."
@@ -13,6 +15,8 @@
           {
             "name": "One-Week-Old Chick (F1 Improved Kienyeji)",
             "img": "/gallery/group-of-newborn-chicks.webp",
+            "width": 870,
+            "height": 580,
             "price": 120,
             "stock": "In Stock",
             "desc": "Stronger, vaccinated chicks for a head start. Types: Sasso, Kuroiler, Kenbro, Rainbow Rooster."
@@ -20,6 +24,8 @@
           {
             "name": "Two-Weeks-Old Pullet (F1 Improved Kienyeji)",
             "img": "/gallery/two-weeks-old-pullet-f1-improved-kienyeji.webp",
+            "width": 1200,
+            "height": 628,
             "price": 150,
             "stock": "In Stock",
             "desc": "Ready-to-lay pullets. Types: Sasso, Kuroiler, Kenbro, Rainbow Rooster."
@@ -32,6 +38,8 @@
           {
             "name": "Mature Kienyeji Chicken",
             "img": "/gallery/mature-kienyeji-chicken.webp",
+            "width": 895,
+            "height": 580,
             "price": 900,
             "stock": "In Stock",
             "desc": "Traditional kienyeji chicken, mature and ready for your table. Price range: 600-1200."
@@ -39,6 +47,8 @@
           {
             "name": "Brown Kienyeji Chicken",
             "img": "/gallery/brown-kienyeji-chicken.webp",
+            "width": 871,
+            "height": 581,
             "price": 950,
             "stock": "In Stock",
             "desc": "Brown kienyeji chicken, great for meat and eggs."
@@ -46,6 +56,8 @@
           {
             "name": "White Kienyeji Chicken",
             "img": "/gallery/white-hen-with-red-comb-2.webp",
+            "width": 326,
+            "height": 580,
             "price": 1000,
             "stock": "In Stock",
             "desc": "White kienyeji chicken, hardy and productive."
@@ -58,6 +70,8 @@
           {
             "name": "Improved Kienyeji Chicken (Sasso)",
             "img": "/gallery/improved-kienyeji-chicken-sasso.webp",
+            "width": 870,
+            "height": 580,
             "price": 800,
             "stock": "In Stock",
             "desc": "Sasso breed, fast-growing and productive."
@@ -65,6 +79,8 @@
           {
             "name": "Improved Kienyeji Chicken (Kuroiler)",
             "img": "/gallery/female-improved-kienyeji-hen.webp",
+            "width": 870,
+            "height": 580,
             "price": 850,
             "stock": "In Stock",
             "desc": "Kuroiler breed, excellent for meat and eggs."
@@ -72,6 +88,8 @@
           {
             "name": "Improved Kienyeji Chicken (Kenbro)",
             "img": "/gallery/white-hen-with-red-comb.webp",
+            "width": 600,
+            "height": 399,
             "price": 1000,
             "stock": "In Stock",
             "desc": "Kenbro breed, hardy and high-yielding."
@@ -85,6 +103,8 @@
         {
           "name": "Kienyeji Eggs (Tray)",
           "img": "/gallery/kienyeji-eggs.webp",
+          "width": 327,
+          "height": 581,
           "price": 700,
           "stock": "In Stock",
           "desc": "Fresh kienyeji eggs, sold per tray (30 eggs). Healthy, natural, and delicious."
@@ -92,6 +112,8 @@
         {
           "name": "Layers Eggs (Tray)",
           "img": "/gallery/fresh-eggs-in-a-basket.webp",
+          "width": 743,
+          "height": 580,
           "price": 450,
           "stock": "In Stock",
           "desc": "Farm-fresh layers eggs, sold per tray (30 eggs). High-yield and nutritious."
@@ -99,6 +121,8 @@
         {
           "name": "Guinea Fowl/ Kanga (Per Egg)",
           "img": "/gallery/guinea-fowl-eggs.webp",
+          "width": 870,
+          "height": 580,
           "price": 100,
           "stock": "In Stock",
           "desc": "Exotic guinea fowl eggs (Kanga), sold per egg. Rich in nutrients and flavor."
@@ -112,6 +136,8 @@
           {
             "name": "Muscovy Duck (Kiengei)",
             "img": "/gallery/muscovy-duck-kiengei.webp",
+            "width": 1024,
+            "height": 681,
             "price": 700,
             "stock": "In Stock",
             "desc": "Hardy Muscovy ducks for meat and eggs."
@@ -119,6 +145,8 @@
           {
             "name": "Luen Duck",
             "img": "/gallery/luen-duck-2.webp",
+            "width": 870,
+            "height": 580,
             "price": 800,
             "stock": "In Stock",
             "desc": "Luen ducks, great for backyard farming."
@@ -126,6 +154,8 @@
           {
             "name": "Pekin Duck",
             "img": "/gallery/duck-chicks.webp",
+            "width": 870,
+            "height": 580,
             "price": 850,
             "stock": "In Stock",
             "desc": "Popular Pekin ducks, excellent for meat."
@@ -138,6 +168,8 @@
           {
             "name": "Male Turkey",
             "img": "/gallery/beautiful-male-turkey-in-a-field.webp",
+            "width": 870,
+            "height": 580,
             "price": 4000,
             "stock": "In Stock",
             "desc": "Large, healthy male turkeys for breeding and meat."
@@ -145,6 +177,8 @@
           {
             "name": "Female Turkey",
             "img": "/gallery/female-turkey.webp",
+            "width": 870,
+            "height": 580,
             "price": 3500,
             "stock": "In Stock",
             "desc": "Productive female turkeys for eggs and meat."
@@ -152,6 +186,8 @@
           {
             "name": "Turkey Middle Sized Chicks",
             "img": "/gallery/group-of-turkeys-in-a-field.webp",
+            "width": 1374,
+            "height": 1031,
             "price": 2500,
             "stock": "In Stock",
             "desc": "Healthy turkey chicks. Price varies by size."
@@ -164,6 +200,8 @@
           {
             "name": "Goose",
             "img": "/gallery/goose.webp",
+            "width": 870,
+            "height": 580,
             "price": 3000,
             "stock": "In Stock",
             "desc": "Strong geese for meat and eggs. Price range: 2500-3000."
@@ -171,6 +209,8 @@
           {
             "name": "White Goose",
             "img": "/gallery/white-goose.webp",
+            "width": 871,
+            "height": 581,
             "price": 3000,
             "stock": "In Stock",
             "desc": "White geese, great for eggs and meat."
@@ -178,6 +218,8 @@
           {
             "name": "Grey Goose",
             "img": "/gallery/goose-2.webp",
+            "width": 842,
+            "height": 580,
             "price": 3000,
             "stock": "In Stock",
             "desc": "Grey geese, hardy and productive."
@@ -190,6 +232,8 @@
           {
             "name": "Guinea Fowl",
             "img": "/gallery/guinea-fow-lying-on-the-ground.webp",
+            "width": 869,
+            "height": 580,
             "price": 2000,
             "stock": "In Stock",
             "desc": "Exotic guinea fowls for your farm. Can't escape even when released in the homestead."
@@ -197,13 +241,17 @@
           {
             "name": "Guinea Fowl (pair)",
             "img": "/gallery/group-of-guinea-fowl-feeding.webp",
+            "width": 580,
+            "height": 580,
             "price": 3900,
             "stock": "In Stock",
-            "desc": "Pair of home-bred guinea fowls, perfect for breeding and well adapted to stay in home stead"
+            "desc": "Pair of home-bred guinea fowls, perfect for breeding and well adapted to stay in home stead."
           },
           {
             "name": "Guinea Fowl Chicks",
             "img": "/gallery/guinea-fowl-chicks.webp",
+            "width": 870,
+            "height": 580,
             "price": 1500,
             "stock": "In Stock",
             "desc": "Guinea fowl chicks, perfect for starting your flock. coexist with other birds."
