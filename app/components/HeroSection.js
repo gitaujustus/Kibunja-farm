@@ -4,49 +4,43 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    img: "https://images.unsplash.com/photo-1589923188651-268a9765e432?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/gallery/closeup-of-a-fluffy-chick-in-a-brooder.webp",
     heading: "Start Strong with Quality Chicks",
     subheading: "Trusted breeds. Reliable supply. Perfect for your poultry hustle.",
     cta: "Order Chicks",
   },
   {
-    img: "https://images.unsplash.com/photo-1613684574327-dc32b58b2fca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/gallery/group-of-newborn-chicks.webp",
     heading: "Start Strong with Quality Chicks",
     subheading: "From as little as ksh 89 per chick.",
     cta: "Order Chicks",
   },
   {
-    img: "https://images.unsplash.com/photo-1534627760265-69713192ade4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/gallery/luen-duck-2.webp",
     heading: "Ducks & Geese for Every Farm",
     subheading: "Hardy, healthy waterfowl for meat and eggs.",
     cta: "Order Ducks & Geese",
   },
   {
-    img: "https://images.unsplash.com/photo-1442689859438-97407280183f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/gallery/duck-chicks.webp",
     heading: "Duck Chicks – Strong Start, Great Growth",
     subheading: "Healthy ducklings for meat or eggs.",
     cta: "Order Ducklings Now",
   },
   {
-    img: "https://images.unsplash.com/photo-1647641639865-b509748cad4f?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/gallery/exotic-guinea-fowl.webp",
     heading: "Guinea Fowls: Exotic & Hardy",
     subheading: "Pearl, White, and Lavender breeds available.",
     cta: "Order Guinea Fowls",
   },
   {
-    img: "https://images.unsplash.com/photo-1583147474478-f8920da507ca?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    heading: "Guinea Fowls: Exotic & Hardy",
-    subheading: "Pearl, White, and Lavender breeds available.",
-    cta: "Order Guinea Fowls",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1560011961-4ab41261de01?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/gallery/beautiful-male-turkey-in-a-field.webp",
     heading: "Turkeys: Big, Bold, and Beautiful",
     subheading: "Raise your own flock with our healthy turkeys.",
     cta: "Order Turkeys",
   },
   {
-    img: "https://images.pexels.com/photos/375510/pexels-photo-375510.jpeg?auto=compress&w=600&q=80",
+    img: "/gallery/white-hen-with-red-comb.webp",
     heading: "Mature Hens for Your Farm",
     subheading: "Productive, healthy hens for eggs and meat.",
     cta: "Order Hens",
@@ -95,13 +89,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-// Add the following to your globals.css for fade-in-up animation:
-// @keyframes fade-in-up {
-//   0% { opacity: 0; transform: translateY(20px); }
-//   100% { opacity: 1; transform: translateY(0); }
-// }
-// .animate-fade-in-up { animation: fade-in-up 1s both; }
-// .delay-100 { animation-delay: 0.1s; }
-// .delay-200 { animation-delay: 0.2s; } 
-
