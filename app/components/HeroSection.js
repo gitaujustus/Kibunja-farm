@@ -79,14 +79,15 @@ export default function HeroSection() {
           key={idx}
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
         >
-          <Image
-            src={slide.img}
-            alt={slide.heading}
-            height={slide.height}
-            width={slide.height}
-            className="w-full h-full object-cover object-center"
-            priority
-          />
+         <Image
+          src={slide.img}
+          alt={slide.heading}
+          width={slide.width}
+          height={slide.height}
+          priority={idx === 0}
+          loading={idx === 0 ? "eager" : "lazy"}
+          className="w-full h-full object-cover object-center"
+        />
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/90 via-[#181818]/60 to-transparent mt-10" />
           {/* <div className="absolute inset-0 bg-gradient-to-t from-[#00743F]/80 via-[#00743F]/60 to-transparent mt-10" /> */}
           <motion.div
