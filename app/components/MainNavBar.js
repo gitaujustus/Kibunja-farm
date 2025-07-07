@@ -32,7 +32,7 @@ export default function MainNavBar() {
                 href={link.href}
                 className={
                   (pathname === link.href
-                    ? "text-yellow-400 font-semibold "
+                    ? "text-yellow-300 font-semibold "
                     : "hover:text-yellow-200")
                 }
               >
@@ -50,7 +50,7 @@ export default function MainNavBar() {
                 href={link.href}
                 className={
                   (pathname === link.href
-                    ? "text-yellow-400 font-semibold "
+                    ? "text-yellow-500 font-semibold "
                     : "block py-1 hover:underline underline-offset-4")
                 }
                 onClick={() => setOpen(false)}
