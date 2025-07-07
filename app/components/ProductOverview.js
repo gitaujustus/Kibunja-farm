@@ -93,7 +93,7 @@ export default function ProductOverview() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index* 0.2 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
           >
             {/* Price badge - positioned at top-right corner like in reference */}
             <div className="absolute -top-6 -right-3 z-10">

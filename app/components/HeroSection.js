@@ -92,9 +92,10 @@ export default function HeroSection() {
           {/* <div className="absolute inset-0 bg-gradient-to-t from-[#00743F]/80 via-[#00743F]/60 to-transparent mt-10" /> */}
           <motion.div
             className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mt-60 sm:mt-70"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            viewport={{ once: true }}
           >
             <h1 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg animate-fade-in-up">{slide.heading}</h1>
             <p className="text-lg sm:text-2xl mb-6 font-medium drop-shadow animate-fade-in-up delay-100">{slide.subheading}</p>
