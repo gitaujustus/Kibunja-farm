@@ -37,7 +37,7 @@ const slides = [
     cta: "Order Ducklings Now",
   },
   {
-    img: "/gallery/exotic-guinea-fowl.webp",
+    img: "/gallery/guinea-fow-lying-on-the-ground.webp",
     width: 1032,
     height: 580,
     heading: "Guinea Fowls: Exotic & Hardy",
