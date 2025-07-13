@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
 import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 
-// Reminder: Run 'pnpm add react-icons' if not already installed for icon support in TopContactBar
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

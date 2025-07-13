@@ -13,6 +13,14 @@ const slides = [
     cta: "Order Chicks",
   },
   {
+    img: "/gallery/many-chicks-in-a-well-lit-brooder.webp",
+    width: 1032,
+    height: 518,
+    heading: "Start Strong with Quality Chicks",
+    subheading: "Well Vaccinated against Marek, coccidiosis, and other diseases.",
+    cta: "Order Chicks",
+  },
+  {
     img: "/gallery/group-of-newborn-chicks.webp",
     width: 870,
     height: 580,
@@ -99,7 +107,11 @@ export default function HeroSection() {
           >
             <h1 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg animate-fade-in-up">{slide.heading}</h1>
             <p className="text-lg sm:text-2xl mb-6 font-medium drop-shadow animate-fade-in-up delay-100">{slide.subheading}</p>
-            <a href="#reach-us" className="bg-[#17406D] hover:bg-[#005c32] transition-colors px-8 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2 animate-fade-in-up delay-200">
+            {/* redirect to whatsApp with  */}
+            <a 
+             href={`https://wa.me/254101108340?text=Hello%20Kibunja%20Farm%2C%20I%20would%20like%20to%20order%3A%20${encodeURIComponent(slide.heading)}`}
+            target="_blank"
+            className="bg-[#00743F] hover:bg-[#00744098] transition-colors px-8 py-3 rounded-full font-semibold text-lg shadow-lg flex items-center gap-2 animate-fade-in-up delay-200">
               {slide.cta}
             </a>
           </motion.div>

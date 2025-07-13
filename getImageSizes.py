@@ -3,7 +3,7 @@ import json
 from PIL import Image
 
 # Path to the gallery folder
-GALLERY_DIR = 'C:/Users/jgath/justus-farm/public/gallery'
+GALLERY_DIR = 'C:/Users/jgath/justus-farm/public/real-images'
 
 images = []
 
